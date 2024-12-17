@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thier-Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: red;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background-color: #ff6666;
+            border-radius: 5px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 10px 15px;
+            margin-left: 5px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #ff6666;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+        .card p {
+            font-size: 16px;
+            color: #555;
+        }
+        .card button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .card button:hover {
+            background-color: #218838;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logomarvel1.jpg" alt="Logo Thier-Service" style="max-width: 150px; display: block; margin: 0 auto;">
+    <h1>Bienvenue sur Thier-Service</h1>
+    <p>Votre choix est notre inquiétude pour vous servir</p>
+</header>
+
+<nav>
+    <a href="#home">Accueil</a>
+    <a href="#products">Cartes Graphiques</a>
+    <a href="#ssd">Disques Durs SSD</a>
+    <a href="#pcs">PC en Vente</a>
+    <a href="#gamer">PC Gamer</a>
+    <a href="#peripherals">Souris et Claviers</a>
+    <a href="#controllers">Manettes</a>
+    <a href="#help">Aide</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="search-bar">
+    <input type="text" placeholder="Rechercher un produit...">
+    <button>Rechercher</button>
+</div>
+
+<div class="container">
+    <section id="products">
+        <h2>Nos cartes graphiques</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="81fdwjVl2lL.jpg" alt="Carte RTX">
+                <h3>Carte graphique RTX</h3>
+                <p>Prix : 105,000 FCFA</p>
+                <button>Ajouter au panier</button>
+            </div>
+
+            <div class="card">
+                <img src="XFX-AMD-Radeon-RX-580-1-600x600.jpg" alt="Carte Radeon">
+                <h3>Carte graphique Radeon</h3>
+                <p>Prix : 105,000 FCFA</p>
+                <button>Ajouter au panier</button>
+            </div>
+
+            <div class="card">
+                <img src="61PNx5WN+xL._AC_UF1000,1000_QL80_.jpg" alt="Carte Nvidia">
+                <h3>Carte graphique Nvidia</h3>
+                <p>Prix : 105,000 FCFA</p>
+                <button>Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="ssd">
+        <img src="pc_vente1.jpg" alt="PC en Vente 1">
+        <h2>Disques Durs SSD</h2>
+        <div class="grid">
+            <!-- Ajouter ici les produits SSD -->
+        </div>
+    </section>
+
+    <section id="pcs">
+        <img src="c08770268.jpg" alt="PC en Vente 1">
+        <h2>PC en vente </h2>
+        <div class="grid">
+            <!Ajouter ici les pc en vents  -->
+        </div>
+    </section>
+
+    <section id="Pc Gamer">
+        <img src="51epw6QY-2L._AC_SY780_.jpg" alt="PC en Vente 1">
+        <h2>PC Gamer</h2>
+        <div class="grid">
+            <!-- ajoutér ici les pcgamer en vente -->
+        </div>
+    </section>
+
+    <section id="peripherals">
+        <h2>Souris et Claviers</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="Souris-Gamer-Filaire-Logitech-G502-Hero-RGB-USB.jpg" alt="Souris Logitech">
+                <h3>Souris Logitech</h3>
+                <p>Prix : 15,000 FCFA</p>
+                <button>Ajouter au panier</button>
+            </div>
+
+            <div class="card">
+                <img src="CLANMB2.jpg" alt="Clavier HP">
+                <h3>Clavier HP</h3>
+                <p>Prix : 20,000 FCFA</p>
+                <button>Ajouter au panier</button>
+            </div>
+
+            <div class="card">
+                <img src="51nvYFmUfjL._AC_UF8941000_QL80.jpg" alt="Clavier Lenovo">
+                <h3>Clavier Lenovo</h3>
+                <p>Prix : 18,000 FCFA</p>
+                <button>Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="controllers">
+        <h2>Manettes</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="asset-1367265.jpg" alt="Manette Nacon">
+                <h3>Manette Nacon</h3>
+                <p>Prix : 25,000 FCFA</p>
+                <button>Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="help">
+        <h2>Les guides d’achat Thier-Service</h2>
+        <p>Besoin d'acheter ou de monter un nouvel ordinateur mais vous ne savez pas vers quelle solution vous diriger ?</p>
+        <p>Vous voulez acquérir un serveur de stockage et partager vos contenus avec toute votre famille sans vous compliquer la vie ?</p>
+        <p><strong>Pas de panique !</strong> Nous sommes là pour vous guider ! Découvrez gratuitement une série de guides complets et illustrés pour vous épauler et vous aider dans vos démarches. Faites votre choix, nous sommes à vos côtés !</p>
+    </section>
+</div>
+
+<footer>
+    <p>Contactez-nous : 775401338 | Email : ibrahimadkr75@gmail.com</p>
+</footer>
+
+</body>
+</html>
+m
